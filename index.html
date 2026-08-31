@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бухгалтерский учет для похоронных бюро и ритуальных агентств</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --text-color: #ffffff;
+            --text-muted: #aaaaaa;
+            --accent-color: #df9e28;
+            --accent-hover: #f1b341;
+            --border-color: #444444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #111111;
+            border-bottom: 2px solid var(--accent-color);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: var(--accent-color);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .form-section {
+            background-color: #111111;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-section h3 {
+            text-align: center;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .form-section p {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: var(--accent-color);
+            color: #000000;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 { font-size: 1.8rem; }
+            .form-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>РИТУАЛ-БУХГАЛТЕР</h1>
+        <p>Профессиональный учет в сфере ритуальных услуг</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="hero">
+            <h2>Специфика учета без штрафов и рисков</h2>
+            <p>Экспертное ведение бухгалтерии, налогового и кадрового учета для похоронных бюро, гранитных мастерских и ритуальных агентств.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>БСО и Учет ТМЦ</h3>
+                <p>Правильный учет специфического инвентаря, памятников, венков и гробов. Контроль бланков строгой отчетности (БО-13).</p>
+            </div>
+            <div class="feature-card">
+                <h3>Пособия и Субсидии</h3>
+                <p>Безошибочное оформление документов на выплату социального пособия на погребение и взаимодействие с СФР.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Налоговая оптимизация</h3>
+                <p>Законное снижение налоговой нагрузки с учетом особенностей регионального законодательства и формы собственности.</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h3>Получить консультацию</h3>
+            <p>Оставьте ваши контакты. Данные придут напрямую на вашу почту через Formspree.</p>
+            
+            <!-- ЗАМЕНИТЕ ССЫЛКУ НИЖЕ НА ВАШУ ИЗ ЛИЧНОГО КАБИНЕТА FORMSPREE -->
+            <form action="https://formspree.io/f/xwlklkva" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" name="name" id="name" required placeholder="Иван Иванович">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефона</label>
+                    <input type="tel" name="phone" id="phone" required placeholder="+7 (999) 000-00-00">
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваш вопрос или тип организации</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Например: ООО, ритуальное агентство..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Оставить заявку</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ритуал-Бухгалтер. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
