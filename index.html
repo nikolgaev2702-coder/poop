@@ -3,244 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бухгалтерский учет для похоронных бюро и ритуальных агентств</title>
+    <title>Профессиональные бухгалтерские услуги</title>
     <style>
-        :root {
-            --bg-color: #1a1a1a;
-            --card-bg: #2d2d2d;
-            --text-color: #ffffff;
-            --text-muted: #aaaaaa;
-            --accent-color: #df9e28;
-            --accent-hover: #f1b341;
-            --border-color: #444444;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #111111;
-            border-bottom: 2px solid var(--accent-color);
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 1.8rem;
-            color: var(--text-color);
-            margin-bottom: 5px;
-        }
-
-        header p {
-            color: var(--accent-color);
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--text-color);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 800px;
-            margin: 0 auto 30px auto;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .feature-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 30px;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-color);
-        }
-
-        .feature-card h3 {
-            color: var(--accent-color);
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-
-        .feature-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .form-section {
-            background-color: #111111;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 40px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-section h3 {
-            text-align: center;
-            font-size: 1.6rem;
-            margin-bottom: 10px;
-            color: var(--text-color);
-        }
-
-        .form-section p {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            font-size: 0.95rem;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--text-color);
-            font-size: 0.9rem;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            background-color: var(--bg-color);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            color: var(--text-color);
-            font-size: 1rem;
-        }
-
-        .form-group input:focus, .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent-color);
-        }
-
-        .submit-btn {
-            display: block;
-            width: 100%;
-            padding: 14px;
-            background-color: var(--accent-color);
-            color: #000000;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
-
-        .submit-btn:hover {
-            background-color: var(--accent-hover);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 60px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h2 { font-size: 1.8rem; }
-            .form-section { padding: 20px; }
-        }
+        :root { --bg-color: #121214; --card-bg: #1e1e22; --text-color: #f1f5f9; --text-muted: #94a3b8; --primary-color: #0b0b0c; --accent-color: #df9e28; --accent-hover: #f1b341; --border-color: #2d2d34; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        header { background-color: var(--primary-color); border-bottom: 3px solid var(--accent-color); padding: 25px 20px; text-align: center; }
+        header h1 { font-size: 2rem; color: #ffffff; margin-bottom: 5px; }
+        header p { color: var(--accent-color); font-size: 1rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+        .hero { text-align: center; margin-bottom: 40px; }
+        .hero h2 { font-size: 2.5rem; margin-bottom: 15px; color: #ffffff; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; }
+        .slider-section { max-width: 800px; margin: 0 auto 60px auto; position: relative; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .slider { display: flex; transition: transform 0.5s ease-in-out; width: 100%; }
+        .slide { min-width: 100%; position: relative; }
+        .slide img { width: 100%; height: 400px; object-fit: cover; display: block; background: #1a1a1a; }
+        .slide-caption { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(11, 11, 12, 0.95); padding: 15px; text-align: center; border-top: 2px solid var(--accent-color); }
+        .slide-caption h3 { color: var(--accent-color); margin-bottom: 5px; font-size: 1.2rem; }
+        .slide-caption p { font-size: 0.95rem; color: #cbd5e1; }
+        .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(223, 158, 40, 0.8); color: #000000; border: none; font-size: 1.8rem; font-weight: bold; padding: 10px 15px; cursor: pointer; border-radius: 4px; z-index: 10; }
+        .prev { left: 15px; } .next { right: 15px; }
+        .price-section { margin-bottom: 60px; width: 100%; }
+        .price-title { font-size: 2rem; margin-bottom: 30px; color: #ffffff; font-weight: 600; }
+        .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; }
+        .price-card { background: var(--card-bg); border-radius: 24px; padding: 30px 24px; border: 1px solid var(--border-color); display: flex; flex-direction: column; }
+        .price-icon-box { background: #242429; width: 100%; height: 160px; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; border: 1px solid var(--border-color); }
+        .price-star { width: 48px; height: 48px; fill: #575765; }
+        .price-card h3 { font-size: 1.25rem; color: #ffffff; margin-bottom: 12px; font-weight: 600; }
+        .price-card p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px; flex-grow: 1; }
+        .price-value { font-size: 1.1rem; font-weight: 700; color: var(--accent-color); margin-top: auto; }
+        .form-section { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 45px; max-width: 600px; margin: 0 auto; box-shadow: 0 20px 30px rgba(0,0,0,0.3); }
+        .form-section h3 { text-align: center; font-size: 1.8rem; margin-bottom: 10px; color: #ffffff; }
+        .form-section p { text-align: center; color: var(--text-muted); margin-bottom: 35px; }
+        .form-group { margin-bottom: 22px; }
+        .form-group label { display: block; margin-bottom: 8px; color: #cbd5e1; }
+        .form-group input, .form-group textarea { width: 100%; padding: 14px; background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 6px; color: #ffffff; font-size: 1rem; }
+        .submit-btn { display: block; width: 100%; padding: 16px; background-color: var(--accent-color); color: var(--primary-color); border: none; border-radius: 6px; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
+        footer { text-align: center; padding: 40px; color: var(--text-muted); border-top: 1px solid var(--border-color); margin-top: 60px; }
+        @media (max-width: 900px) { .price-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .price-grid { grid-template-columns: 1fr; } .form-section { padding: 25px; } }
     </style>
+    <script>
+        function moveSlide(direction) {
+            const slider = document.getElementById('slider');
+            const slides = document.querySelectorAll('.slide');
+            if (!slider || slides.length === 0) return;
+            if (typeof window.currentSlide === 'undefined') { window.currentSlide = 0; }
+            window.currentSlide += direction;
+            if (window.currentSlide >= slides.length) { window.currentSlide = 0; }
+            if (window.currentSlide < 0) { window.currentSlide = slides.length - 1; }
+            slider.style.transform = 'translateX(-' + (window.currentSlide * 100) + '%)';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            window.currentSlide = 0;
+            if (window.sliderInterval) { clearInterval(window.sliderInterval); }
+            window.sliderInterval = setInterval(() => { moveSlide(1); }, 5000);
+        });
+    </script>
 </head>
 <body>
-
     <header>
-        <h1>РИТУАЛ-БУХГАЛТЕР</h1>
-        <p>Профессиональный учет в сфере ритуальных услуг</p>
+        <h1>ПРОФЕССИОНАЛЬНЫЙ БУХГАЛТЕР</h1>
+        <p>Учет и аудит для успешного бизнеса</p>
     </header>
-
     <div class="container">
-        
         <section class="hero">
-            <h2>Специфика учета без штрафов и рисков</h2>
-            <p>Экспертное ведение бухгалтерии, налогового и кадрового учета для похоронных бюро, гранитных мастерских и ритуальных агентств.</p>
+            <h2>Финансовый порядок в вашей компании</h2>
+            <p>Полный спектр бухгалтерских услуг для ООО и ИП. Снижение налоговых рисков, подготовка отчетности и кадровый учет без штрафов.</p>
+        </section>
+        
+        <!-- ОБНОВЛЕННАЯ КАРУСЕЛЬ (ТЕПЕРЬ ТУТ 2 СЛАЙДА) -->
+        <section class="slider-section">
+            <div class="slider" id="slider">
+                <!-- Слайд 1 -->
+                <div class="slide">
+                    <img src="orig.jpg" alt="Бухгалтерские услуги">
+                    <div class="slide-caption"><h3>Режимы налогообложения под нашим контролем</h3><p>Упрощённая система налогообложения (УСН)
+
+Общая система налогообложения (ОСНО)
+
+Патентная система налогообложения (ПСН)
+
+Единый сельскохозяйственный налог (ЕСХН)</p></div>
+                </div>
+                <!-- Слайд 2 (Старый слайд 3 стал вторым) -->
+                <div class="slide">
+                    <img src="orig (1).png" alt="Отчетность">
+                    <div class="slide-caption"><h3>Для кого мы работам</h3><p>Общества с ограниченной ответственностью (ООО)
+
+Индивидуальные предприниматели (ИП)
+
+Некоммерческие организации (НКО)</p></div>
+                </div>
+            </div>
+            <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
         </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <h3>БСО и Учет ТМЦ</h3>
-                <p>Правильный учет специфического инвентаря, памятников, венков и гробов. Контроль бланков строгой отчетности (БО-13).</p>
-            </div>
-            <div class="feature-card">
-                <h3>Пособия и Субсидии</h3>
-                <p>Безошибочное оформление документов на выплату социального пособия на погребение и взаимодействие с СФР.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Налоговая оптимизация</h3>
-                <p>Законное снижение налоговой нагрузки с учетом особенностей регионального законодательства и формы собственности.</p>
+        <section class="price-section">
+            <h2 class="price-title">Прайс-лист</h2>
+            <div class="price-grid">
+                <div class="price-card">
+                    <div class="price-icon-box"><svg class="price-star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                    <h3>Ведение бухучета ИП</h3><p>Полное сопровождение, сдача отчетности, кадры, зарплата.</p><div class="price-value">Договорная цена</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-icon-box"><svg class="price-star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                    <h3>Ведение бухучета ООО</h3><p>Полное ведение бухгалтерского учета, сдача отчетности, кадры.</p><div class="price-value">Договорная цена</div>
+                </div>
+                <div class="price-card">
+                    <div class="price-icon-box"><svg class="price-star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                    <h3>Восстановление учета</h3><p>Восстановление бухгалтерского учета, сдача корректировочных...</p><div class="price-value">от 5 000 ₽ за услугу</div>
+                </div>
             </div>
         </section>
 
         <section class="form-section">
             <h3>Получить консультацию</h3>
-            <p>Оставьте ваши контакты. Данные придут напрямую на вашу почту через Formspree.</p>
-            
-            <!-- ЗАМЕНИТЕ ССЫЛКУ НИЖЕ НА ВАШУ ИЗ ЛИЧНОГО КАБИНЕТА FORMSPREE -->
+            <p>Оставьте свои контакты, и мы обсудим задачи вашего бизнеса.</p>
+            <!-- ЗАМЕНИ СЛУЧАЙНЫЕ БУКВЫ В КОНЦЕ НА СВОЙ ID ИЗ FORMSPREE -->
             <form action="https://formspree.io/f/xwlklkva" method="POST">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" name="name" id="name" required placeholder="Иван Иванович">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Номер телефона</label>
-                    <input type="tel" name="phone" id="phone" required placeholder="+7 (999) 000-00-00">
-                </div>
-                <div class="form-group">
-                    <label for="message">Ваш вопрос или тип организации</label>
-                    <textarea name="message" id="message" rows="4" placeholder="Например: ООО, ритуальное агентство..."></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Оставить заявку</button>
+                <div class="form-group"><label>Ваше имя</label><input type="text" name="name" required placeholder="Константин"></div>
+                <div class="form-group"><label>Номер телефона</label><input type="tel" name="phone" required placeholder="+7 (999) 000-00-00"></div>
+                <div class="form-group"><label>Какая услуга вас интересует?</label><textarea name="message" rows="4" placeholder="Например: Нужен учет для ИП..."></textarea></div>
+                <button type="submit" class="submit-btn">Связаться со специалистом</button>
             </form>
         </section>
-
     </div>
-
-    <footer>
-        <p>&copy; 2026 Ритуал-Бухгалтер. Все права защищены.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Профессиональный Бухгалтер. Все права защищены.</p></footer>
 </body>
 </html>
